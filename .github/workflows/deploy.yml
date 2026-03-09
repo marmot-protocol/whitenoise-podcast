@@ -5,6 +5,10 @@ on:
   push:
     branches: ["main", "master"]
 
+  # Rebuild and redeploy the RSS feed every 30 minutes
+  schedule:
+    - cron: "*/30 * * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
