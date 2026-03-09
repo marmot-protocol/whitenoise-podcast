@@ -69,7 +69,7 @@ function formatDurationForRSS(seconds: number): string {
  * Node-compatible RSS feed generation
  */
 function generateRSSFeed(episodes: PodcastEpisode[], trailers: PodcastTrailer[], podcastConfig: PodcastConfig): string {
-  const baseUrl = process.env.BASE_URL || podcastConfig.podcast.website || 'https://marmot-protocol.github.io/whitenoise-podcast';
+  const baseUrl = process.env.BASE_URL || podcastConfig.podcast.website || 'https://podcast.whitenoise.chat';
   const useOP3 = podcastConfig.podcast.useOP3 || false;
 
   return `<?xml version="1.0" encoding="UTF-8"?>

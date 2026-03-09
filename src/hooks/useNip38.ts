@@ -22,7 +22,7 @@ function getCurrentSiteUrl(): string {
   }
   
   // Fallback for SSR or non-browser environments
-  return 'https://marmot-protocol.github.io/whitenoise-podcast';
+  return 'https://podcast.whitenoise.chat';
 }
 
 export function useUpdateNowPlaying() {

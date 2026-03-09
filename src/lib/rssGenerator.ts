@@ -14,7 +14,7 @@ function episodeToRSSItem(episode: PodcastEpisode, config?: PodcastConfig): RSSI
       return window.location.origin;
     }
     // Server-side fallback
-      return process.env.BASE_URL || 'https://marmot-protocol.github.io/whitenoise-podcast';
+      return process.env.BASE_URL || 'https://podcast.whitenoise.chat';
   };
 
   return {
@@ -81,7 +81,7 @@ export function generateRSSFeed(episodes: PodcastEpisode[], config?: PodcastConf
       return window.location.origin;
     }
     // Server-side fallback
-      return process.env.BASE_URL || 'https://marmot-protocol.github.io/whitenoise-podcast';
+      return process.env.BASE_URL || 'https://podcast.whitenoise.chat';
   };
 
   const baseUrl = getBaseUrl();

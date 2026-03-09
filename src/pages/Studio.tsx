@@ -441,7 +441,7 @@ const Studio = () => {
           if (typeof window !== 'undefined') {
             return window.location.origin;
           }
-          return process.env.BASE_URL || 'https://marmot-protocol.github.io/whitenoise-podcast';
+          return process.env.BASE_URL || 'https://podcast.whitenoise.chat';
         };
         
         const baseUrl = getBaseUrl();
